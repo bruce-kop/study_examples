@@ -9,6 +9,9 @@ def deco(func):
         print("time is %d ms"%msecs)
     return func
 
+
+
+
 @deco
 def func():
     print("hello")
