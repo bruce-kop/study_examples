@@ -9,7 +9,6 @@ import pickle
 
 cache = {}
 
-
 def is_obsolete(entry, duration):
     d = time.time() - entry['time']
     return d > duration

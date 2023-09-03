@@ -17,14 +17,15 @@ def timer(func):
     return decorated
 
 @timer
-def random_sleep():
-    """让程序小睡一会 """
-    return time.sleep(random.random())
+def fact(n):
+    if n == 0:
+        return 1
+    else:
+        return n * fact(n - 1)
 
 
 if __name__ == '__main__':
-    random_sleep()
-    print(random_sleep.__name__)
-    print(random_sleep.__doc__)
+    fact(10)
+
 
 
